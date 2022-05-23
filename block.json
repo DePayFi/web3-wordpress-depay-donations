@@ -7,7 +7,7 @@
   "icon": "star",
   "description": "Embed the DePay Donations button.",
   "keywords": [ "depay", "donations", "donation", "button" ],
-  "version": "1.0.6",
+  "version": "1.0.7",
   "textdomain": "depay-donations",
   "example": {},
   "editorScript": "depay-donations-script",
