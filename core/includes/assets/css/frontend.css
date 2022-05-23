@@ -1,0 +1,16 @@
+.wp-block-depay-donations-block {
+
+}
+
+.wp-block-depay-donations-block.align_right {
+  display: inline-block;
+  padding-left: 2rem;
+  float: right;
+}
+
+.wp-block-depay-donations-block.align_left {
+  display: inline-block;
+  padding-right: 2rem;
+  float: left;
+}
+
