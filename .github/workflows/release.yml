@@ -15,7 +15,7 @@ jobs:
 
       - uses: papeloto/action-zip@v1
         with:
-          files: wp-content/plugins/depay-donations
+          files: /
           dest: wp-depay-donations-plugin.zip
       
       - name: Release
