@@ -3,7 +3,7 @@ Contributors: depayfi
 Tags: donations, cryptocurrency, p2p, web3, crypto donations, depay
 Requires at least: 5.0
 Tested up to: 5.9
-Stable tag: 1.0.5
+Stable tag: 1.0.6
 Requires PHP: 5.6
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -96,3 +96,19 @@ Building on the idea that "Web3" is the next generation of a blockchain-based an
 5. Demo: Inline links can trigger the Web3 donation widget to open.
 6. Customize the CSS & label of your Web3 donation button.
 7. Customize the theme appearance with a live preview.
+
+== Changelog ==
+
+= 1.0.6 =
+* plugin directory related improvements
+* remove and reduce graphic files
+* improve descriptions
+
+= 1.0.5 =
+* security relevant improvements to prevent XSS and other html injections
+
+= 1.0.4 =
+* Complete readme.txt
+
+= 1.0.0 =
+* First release
