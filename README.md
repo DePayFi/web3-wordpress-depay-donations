@@ -19,3 +19,12 @@ https://web3wordpress.xyz/
 ## Development
 
 https://github.com/depayfi/web3-wordpress
+
+### Release
+
+In order to release the plugins simply push a git tag:
+
+```
+git tag v1.0.6
+git push origin v1.0.6
+```
