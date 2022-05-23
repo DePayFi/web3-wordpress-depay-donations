@@ -14,7 +14,7 @@
  * Plugin Name:   DePay Donations
  * Plugin URI:    https://depay.fi/plugins/wordpress
  * Description:   Accept & receive Web3 donations in your own wallet. Block-enabled Wordpress plugin for P2P cryptocurrency donations on multiple blockchains, with on-the-fly token conversion.
- * Version:       1.0.8
+ * Version:       1.0.9
  * License:       GPL-2.0+
  * License URI:   http://www.gnu.org/licenses/gpl-2.0.txt
  * Author:        DePay

@@ -2,7 +2,7 @@
 
 The Wordpress Web3 Donation plugin allows you to accept cryptocurrency donations directly into your wallet.
 
-![Wordpress Web3 Donations](/assets/screenshot-1.gif)
+![Wordpress Web3 Donations](/.wordpress-org/screenshot-1.gif)
 
 ### Demo
 
@@ -25,6 +25,6 @@ https://github.com/depayfi/web3-wordpress
 In order to release the plugins simply push a git tag:
 
 ```
-git tag v1.0.8
-git push origin v1.0.8
+git tag v1.0.9
+git push origin v1.0.9
 ```

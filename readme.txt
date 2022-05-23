@@ -1,9 +1,9 @@
 === Web3 Donations by DePay - Accept P2P Crypto Donations ===
 Contributors: depayfi
-Tags: donations, cryptocurrency, p2p, web3, crypto donations, depay
+Tags: donations, cryptocurrency, p2p, web3, crypto, depay
 Requires at least: 5.0
 Tested up to: 5.9
-Stable tag: 1.0.8
+Stable tag: 1.0.9
 Requires PHP: 5.6
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -15,7 +15,9 @@ Accept & receive Web3 donations in your own wallet with DePay. A Block-enabled W
 
 A Block-enabled WordPress plugin for P2P cryptocurrency donations on multiple blockchains.
 
-= WordPress Plugin Features =
+[youtube https://www.youtube.com/watch?v=ZBf1h2mxGss]
+
+= Features =
 > 📌 Check out the [live demo](https://web3wordpress.xyz "Wordpress Plugin for Crypto P2P donations (live demo) by DePay").
 
 * **Wallet-to-wallet**: Middleman-free P2P payments.
@@ -27,12 +29,12 @@ A Block-enabled WordPress plugin for P2P cryptocurrency donations on multiple bl
 * **Block-enabled**: You can add DePay Donations as a WordPress Block.
 * **Custom CSS**: Customize the look of your donation button with your own CSS in the WordPress plugin dashboard.
 
-= Supported wallets for donations =
+= Supported wallets =
 Your supporters can send you Web3 donations using the most popular crypto wallets:
 
 * Metamask
 * Coinbase Wallet
-* 100+ different wallets via [WalletConnect](https://walletconnect.com), **for Example**:
+* 100+ different wallets via [WalletConnect](https://walletconnect.com), **for example**:
   * Trust Wallet
   * DeFi Wallet by crypto.com
   * 1inch Wallet
@@ -48,30 +50,26 @@ Your supporters can send you Web3 donations using the most popular crypto wallet
   * Rainbow 
   * (...)
 
-= Supported Blockchains =
+= Supported blockchains =
 * Ethereum
 * BNB Chain (previously "Binance Smart Chain")
 * Polygon (soon)
 * Solana (soon)
-
-*As of version 1.0.0, DePay supports payments on the Ethereum Network and the BNB Chain (previously "Binance Smart Chain"). We will unlock support for all other major blockchain networks and Layer 2 solutions very soon!*
 
 = About DePay = 
 > [DePay](https://depay.fi) pioneers Web3 Payments with the power of DeFi. 
 > Driving mass adoption of blockchain-based payments, DePay merges the core ideas of decentralization and interoperability with state-of-the-art Web3 technologies.
 > The first truly decentralized multichain payment protocol built on DeFi. ETHOnline finalist, made in Switzerland (Crypto Valley).
 
-🤝 Do you want to integrate the DePay payment protocol into your own WordPress Plugin or project? [We are happy to give you support](https://depay.fi/partnerships).
+🤝 Do you want to integrate the DePay payment protocol into your own WordPress plugin or project? [We are happy to give you support](https://depay.fi/documentation#support).
 
 == Installation ==
-❤️ The DePay community is [here for you](https://t.me/depayfi) in case you need support.
 
-= Manual Steps =
 [youtube https://www.youtube.com/watch?v=ZBf1h2mxGss]
 
-1. Download the latest plugin zip file here or on GitHub
-2. Install the plugin from within your WordPress "Plugins" area: ("Plugins" - "Upload Plugin")
-3. Select the downloaded zip file & install
+-> [How to Accept Web3 Cryptocurrency Donations on Wordpress](https://depay.fi/how-to/accept-web3-cryptocurrency-donations-on-wordpress-3kmut5La6fMFiv7lHCfaeF)
+
+❤️ The DePay community is [here for you](https://depay.fi/documentation#support) in case you need additional support.
 
 == Frequently Asked Questions ==
 
@@ -98,6 +96,9 @@ Building on the idea that "Web3" is the next generation of a blockchain-based an
 7. Customize the theme appearance with a live preview.
 
 == Changelog ==
+
+= 1.0.9 =
+* improves plugin listing on wordpress.org
 
 = 1.0.8 =
 * improves plugin listing on wordpress.org
