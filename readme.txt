@@ -3,7 +3,7 @@ Contributors: depayfi
 Tags: donations, cryptocurrency, p2p, web3, depay
 Requires at least: 5.0
 Tested up to: 5.9
-Stable tag: 1.0.10
+Stable tag: 1.0.11
 Requires PHP: 5.6
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -15,7 +15,7 @@ Web3 donations directly into your own wallet. A Block-enabled WordPress plugin f
 
 A Block-enabled WordPress plugin for P2P cryptocurrency donations on multiple blockchains.
 
-[youtube https://www.youtube.com/watch?v=ZBf1h2mxGss]
+[youtube https://www.youtube.com/watch?v=bc1sPOnlGyk]
 
 = Features =
 > 📌 Check out the [live demo](https://web3wordpress.xyz "Wordpress Plugin for Crypto P2P donations (live demo) by DePay").
@@ -69,7 +69,7 @@ Your supporters can send you Web3 donations using the most popular crypto wallet
 
 == Installation ==
 
-[youtube https://www.youtube.com/watch?v=ZBf1h2mxGss]
+[youtube https://www.youtube.com/watch?v=bc1sPOnlGyk]
 
 -> [How to Accept Web3 Cryptocurrency Donations on Wordpress](https://depay.fi/how-to/accept-web3-cryptocurrency-donations-on-wordpress-3kmut5La6fMFiv7lHCfaeF)
 
@@ -100,6 +100,9 @@ Building on the idea that "Web3" is the next generation of a blockchain-based an
 7. Customize the theme appearance with a live preview.
 
 == Changelog ==
+
+= 1.0.11 =
+* update youtube video link on wordpress.org
 
 = 1.0.10 =
 * improves plugin listing on wordpress.org
