@@ -1,17 +1,17 @@
 === Web3 Donations by DePay - Accept P2P Crypto Donations ===
 Contributors: depayfi
-Tags: donations, cryptocurrency, p2p, web3, crypto, depay
+Tags: donations, cryptocurrency, p2p, web3, depay
 Requires at least: 5.0
 Tested up to: 5.9
-Stable tag: 1.0.9
+Stable tag: 1.0.10
 Requires PHP: 5.6
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Accept & receive Web3 donations in your own wallet with DePay. A Block-enabled WordPress plugin for P2P crypto donations with on-the-fly conversion.
+Web3 donations directly into your own wallet. A Block-enabled WordPress plugin for P2P crypto donations with on-the-fly conversion.
 
 == Description ==
-**Accept & receive Web3 Cryptocurrency Donations in your own wallet with DePay Donations.**
+**Web3 donations directly into your own wallet.**
 
 A Block-enabled WordPress plugin for P2P cryptocurrency donations on multiple blockchains.
 
@@ -56,6 +56,10 @@ Your supporters can send you Web3 donations using the most popular crypto wallet
 * Polygon (soon)
 * Solana (soon)
 
+= Pricing =
+
+1% transaction fee.
+
 = About DePay = 
 > [DePay](https://depay.fi) pioneers Web3 Payments with the power of DeFi. 
 > Driving mass adoption of blockchain-based payments, DePay merges the core ideas of decentralization and interoperability with state-of-the-art Web3 technologies.
@@ -88,14 +92,17 @@ Building on the idea that "Web3" is the next generation of a blockchain-based an
 == Screenshots ==
 
 1. Performing a Web3 Donation with DePay.
-2. Simple Setup: Configuration of tokens you want to receive after on-the-fly conversion.
+2. Inline links can also trigger the donation.
 3. Block-enabled WordPress Plugin for crypto donations.
-4. Demo: Insert inline donation links.
-5. Demo: Inline links can trigger the Web3 donation widget to open.
+4. Insert inline donation links.
+5. Simple Setup: Connect wallet & configure tokens.
 6. Customize the CSS & label of your Web3 donation button.
 7. Customize the theme appearance with a live preview.
 
 == Changelog ==
+
+= 1.0.10 =
+* improves plugin listing on wordpress.org
 
 = 1.0.9 =
 * improves plugin listing on wordpress.org
