@@ -3,7 +3,7 @@ Contributors: depayfi
 Tags: donations, cryptocurrency, p2p, web3, depay
 Requires at least: 5.0
 Tested up to: 6.0
-Stable tag: 1.2.0
+Stable tag: 1.2.1
 Requires PHP: 5.6
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -53,7 +53,7 @@ Your supporters can send you Web3 donations using the most popular crypto wallet
 = Supported blockchains =
 * Ethereum
 * BNB Chain (previously "Binance Smart Chain")
-* Polygon (soon)
+* Polygon
 * Solana (soon)
 
 = Pricing =
@@ -100,6 +100,9 @@ Building on the idea that "Web3" is the next generation of a blockchain-based an
 7. Customize the theme appearance with a live preview.
 
 == Changelog ==
+
+= 1.2.1 =
+* fixes readme: we do support Polygon now
 
 = 1.2.0 =
 * ships fully bundled with react 18 now
