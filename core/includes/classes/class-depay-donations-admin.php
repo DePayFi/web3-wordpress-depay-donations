@@ -281,8 +281,7 @@ class DePay_Donations_Admin{
     wp_enqueue_style( 'DEPAYDONATIONS-styles-admin', DEPAYDONATIONS_PLUGIN_URL . 'core/includes/assets/css/admin.css', array(), DEPAYDONATIONS_VERSION, 'all' );
     wp_enqueue_script( 'DEPAYDONATIONS-scripts-ace', DEPAYDONATIONS_PLUGIN_URL . 'core/includes/assets/js/ace.js', array(), DEPAYDONATIONS_VERSION, false );
     wp_enqueue_script( 'DEPAYDONATIONS-scripts-widgets', DEPAYDONATIONS_PLUGIN_URL . 'core/includes/assets/js/widgets.bundle.js', array(), DEPAYDONATIONS_VERSION, false );
-    wp_enqueue_script( 'DEPAYDONATIONS-scripts-react-shadow-dom', DEPAYDONATIONS_PLUGIN_URL . 'core/includes/assets/js/react-shadow-dom.js', ['wp-element'], DEPAYDONATIONS_VERSION, false );
-    wp_enqueue_script( 'DEPAYDONATIONS-scripts-buttons', DEPAYDONATIONS_PLUGIN_URL . 'core/includes/assets/js/buttons.js', ['wp-element'], DEPAYDONATIONS_VERSION, false );
+    wp_enqueue_script( 'DEPAYDONATIONS-scripts-buttons', DEPAYDONATIONS_PLUGIN_URL . 'core/includes/assets/js/buttons.bundle.js', ['wp-element'], DEPAYDONATIONS_VERSION, false );
     wp_enqueue_script( 'DEPAYDONATIONS-scripts-admin', DEPAYDONATIONS_PLUGIN_URL . 'core/includes/assets/js/admin.js', array(), DEPAYDONATIONS_VERSION, false );
   }
 

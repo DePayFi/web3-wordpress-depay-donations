@@ -2,8 +2,8 @@
 Contributors: depayfi
 Tags: donations, cryptocurrency, p2p, web3, depay
 Requires at least: 5.0
-Tested up to: 5.9
-Stable tag: 1.1.1
+Tested up to: 6.0
+Stable tag: 1.2.0
 Requires PHP: 5.6
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -100,6 +100,11 @@ Building on the idea that "Web3" is the next generation of a blockchain-based an
 7. Customize the theme appearance with a live preview.
 
 == Changelog ==
+
+= 1.2.0 =
+* ships fully bundled with react 18 now
+* updates widget + buttons to v7.0.3
+* tested up to Wordpress 6.0
 
 = 1.1.1 =
 * fixes widget bundle
