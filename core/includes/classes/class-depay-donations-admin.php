@@ -105,7 +105,7 @@ class DePay_Donations_Admin{
             fee: { amount: '1%', receiver: '0x7b94266CA5cC36005b3043e1ffE5EBd624494731' }
           }))
         }
-        widgetEditor.session.on('change', window.lodash.debounce(()=>{
+        widgetEditor.session.on('change', _debounce(()=>{
           let css = widgetEditor.getValue()
           document.getElementById('DePay_donations_widget_css').value = css
           initDonationWidget()
@@ -114,7 +114,7 @@ class DePay_Donations_Admin{
         var buttonEditor = ace.edit("buttonEditor")
         buttonEditor.session.setOptions({ tabSize: 2, useSoftTabs: true })
         buttonEditor.session.setMode("ace/mode/css")
-        buttonEditor.session.on('change', window.lodash.debounce(function(delta) {
+        buttonEditor.session.on('change', _debounce(function(delta) {
           let css = buttonEditor.getValue()
           document.getElementById('DePay_donations_button_css').value = css
           initDonationButton()
@@ -140,8 +140,8 @@ class DePay_Donations_Admin{
           button.innerHTML = ''
           DePayButtons.init({document: document})
         }
-        document.getElementById('DePay_donations_button_label').addEventListener('keydown', window.lodash.debounce(initDonationButton, 300))
-        document.getElementById('DePay_donations_receiving_wallet_address').addEventListener('keydown', window.lodash.debounce(()=>{
+        document.getElementById('DePay_donations_button_label').addEventListener('keydown', _debounce(initDonationButton, 300))
+        document.getElementById('DePay_donations_receiving_wallet_address').addEventListener('keydown', _debounce(()=>{
           initDonationButton()
           initDonationWidget()
         }, 300))
@@ -279,6 +279,7 @@ class DePay_Donations_Admin{
 
   public static function add_scripts_and_styles() {
     wp_enqueue_style( 'DEPAYDONATIONS-styles-admin', DEPAYDONATIONS_PLUGIN_URL . 'core/includes/assets/css/admin.css', array(), DEPAYDONATIONS_VERSION, 'all' );
+    wp_enqueue_script( 'DEPAYDONATIONS-scripts-debounce', DEPAYDONATIONS_PLUGIN_URL . 'core/includes/assets/js/debounce.js', array(), DEPAYDONATIONS_VERSION, false );
     wp_enqueue_script( 'DEPAYDONATIONS-scripts-ace', DEPAYDONATIONS_PLUGIN_URL . 'core/includes/assets/js/ace.js', array(), DEPAYDONATIONS_VERSION, false );
     wp_enqueue_script( 'DEPAYDONATIONS-scripts-widgets', DEPAYDONATIONS_PLUGIN_URL . 'core/includes/assets/js/widgets.bundle.js', array(), DEPAYDONATIONS_VERSION, false );
     wp_enqueue_script( 'DEPAYDONATIONS-scripts-react-shadow-dom', DEPAYDONATIONS_PLUGIN_URL . 'core/includes/assets/js/react-shadow-dom.js', ['wp-element'], DEPAYDONATIONS_VERSION, false );

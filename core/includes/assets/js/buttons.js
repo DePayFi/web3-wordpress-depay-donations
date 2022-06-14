@@ -2,13 +2,13 @@
   typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('react'), require('@depay/widgets'), require('@depay/react-shadow-dom'), require('react-dom')) :
   typeof define === 'function' && define.amd ? define(['react', '@depay/widgets', '@depay/react-shadow-dom', 'react-dom'], factory) :
   (global = typeof globalThis !== 'undefined' ? globalThis : global || self, global.DePayButtons = factory(global.React, global.DePayWidgets, global.ReactShadowDOM, global.ReactDOM));
-}(this, (function (React, DePayWidgets, reactShadowDom, ReactDOM) { 'use strict';
+}(this, (function (React, DePayWidgets, reactShadowDom, m) { 'use strict';
 
   function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
 
   var React__default = /*#__PURE__*/_interopDefaultLegacy(React);
   var DePayWidgets__default = /*#__PURE__*/_interopDefaultLegacy(DePayWidgets);
-  var ReactDOM__default = /*#__PURE__*/_interopDefaultLegacy(ReactDOM);
+  var m__default = /*#__PURE__*/_interopDefaultLegacy(m);
 
   var Button = (function (props) {
     return /*#__PURE__*/React__default['default'].createElement("div", null, /*#__PURE__*/React__default['default'].createElement("div", {
@@ -47,23 +47,25 @@
     }, "Powered by ", /*#__PURE__*/React__default['default'].createElement("strong", null, "DePay"))));
   });
 
-  var insideStyle = "\n  .ReactShadowDOMInsideContainer {\n    user-select: none;\n  }\n  \n  button {\n    background: #ea357a;\n    border-radius: 32px;\n    border: 1px solid transparent;\n    color: white;\n    cursor: pointer;\n    font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\";\n    font-size: 21px;\n    font-weight: 500;\n    min-width: 200px;\n    padding: 11px 32px;\n  }\n\n  button:hover {\n    box-shadow: inset 0 0 500px rgba(0,0,0,0.05);\n  }\n\n  button:active {\n    box-shadow: inset 0 0 500px rgba(0,0,0,0.1);\n  }\n\n  button.round {\n    border-radius: 32px;\n  }\n\n  button.rounded {\n    border-radius: 8px;\n  }\n\n  button.square {\n    border-radius: 0;\n  }\n\n  .Row {\n    line-height: 16px;\n  }\n\n  .ExampleToken {\n    border-radius: 999px;\n    height: 22px;\n    margin-right: 6px;\n    margin-top: 8px;\n    overflow: hidden;\n    width: 22px;\n  }\n\n  .ExampleToken:last-child {\n    margin-right: 0;\n  }\n\n  .PoweredBy {\n    color: rgba(0,0,0,0.2);\n    display: inline-block;\n    font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\";\n    font-size: 12px;\n    font-style: italic;\n    line-height: 28px;\n    position: relative;\n    text-decoration: none;\n    top: -5px;\n  }\n\n  .PoweredBy:hover {\n    color: rgba(0,0,0,0.4);\n  }\n\n  strong {\n    font-weight: 800;\n    letter-spacing: -0.5px;\n  }\n";
+  var insideStyle = "\n  .ReactShadowDOMInsideContainer {\n    user-select: none;\n  }\n  \n  button {\n    background: #ea357a;\n    border-radius: 32px;\n    border: 1px solid transparent;\n    color: white;\n    cursor: pointer;\n    font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\";\n    font-size: 21px;\n    font-weight: 500;\n    min-width: 200px;\n    padding: 11px 32px;\n  }\n\n  button:hover {\n    box-shadow: inset 0 0 500px rgba(0,0,0,0.05);\n  }\n\n  button:active {\n    box-shadow: inset 0 0 500px rgba(0,0,0,0.1);\n  }\n\n  button.round {\n    border-radius: 32px;\n  }\n\n  button.rounded {\n    border-radius: 8px;\n  }\n\n  button.square {\n    border-radius: 0;\n  }\n\n  .Row {\n    line-height: 16px;\n  }\n\n  .ExampleToken {\n    border-radius: 999px;\n    height: 22px;\n    margin-right: 6px;\n    margin-top: 8px;\n    overflow: hidden;\n    width: 22px;\n  }\n\n  .ExampleToken:last-child {\n    margin-right: 0;\n  }\n\n  .PoweredBy {\n    color: rgba(0,0,0,0.2);\n    display: inline-block;\n    font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\";\n    font-size: 12px;\n    font-style: italic;\n    line-height: 28px;\n    position: relative;\n    text-decoration: none;\n    top: -5px;\n  }\n\n  .PoweredBy:hover {\n    color: rgba(0,0,0,0.4);\n  }\n\n  strong {\n    font-weight: 800;\n    letter-spacing: -0.5px;\n  }\n";
 
   var outsideStyle = "\n  text-align: center;\n";
 
   var DePayButton = (function (props) {
-    var element = React.useRef();
+    var element = React.useRef(null);
     React.useEffect(function () {
-      reactShadowDom.ReactShadowDOM({
-        document: document,
-        element: element.current,
-        content: /*#__PURE__*/React__default['default'].createElement(Button, {
-          label: props.label,
-          onClick: onclickHandler
-        }),
-        outsideStyle: outsideStyle,
-        insideStyle: insideStyle + " " + props.css
-      });
+      if (element.current) {
+        reactShadowDom.ReactShadowDOM({
+          document: document,
+          element: element.current,
+          content: /*#__PURE__*/React__default['default'].createElement(Button, {
+            label: props.label,
+            onClick: onclickHandler
+          }),
+          outsideStyle: outsideStyle,
+          insideStyle: insideStyle + " " + props.css
+        });
+      }
     }, [element]);
 
     var onclickHandler = function onclickHandler() {
@@ -105,11 +107,25 @@
     });
   }
 
+  function createCommonjsModule(fn) {
+    var module = { exports: {} };
+    return fn(module, module.exports), module.exports;
+  }
+
+  var client = createCommonjsModule(function (module, exports) {
+
+
+  {
+    exports.createRoot = m__default['default'].createRoot;
+    exports.hydrateRoot = m__default['default'].hydrateRoot;
+  }
+  });
+
   var DePayButtons = {
     init: init,
     DePayButton: DePayButton,
     React: React__default['default'],
-    ReactDOM: ReactDOM__default['default'],
+    createRoot: client.createRoot,
     DePayWidgets: DePayWidgets__default['default']
   };
 
