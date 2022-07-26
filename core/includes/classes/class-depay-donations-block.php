@@ -148,7 +148,7 @@ class DePay_Donations_Block {
       ]);
     }
     $accept = json_encode($accept);
-    $html = '<div class="DePayButton" label="'.esc_html($buttonLabel).'" widget="Donation" configuration=\'{ "style": { "colors": { "primary": "'.esc_html($widgetColorPrimary).'", "buttonText": "'.esc_html($widgetColorButtons).'", "icons": "'.esc_html($widgetColorIcons).'", "text": "'.esc_html($widgetColorText).'" }, "css": "'.esc_html($widgetCSS).'" }, "accept": '.str_replace('&quot;', '"', esc_html($accept)).', "fee": { "amount": "1%", "receiver": "0x7b94266CA5cC36005b3043e1ffE5EBd624494731" } }\' css="'.esc_html($buttonCSS).'"></div><script>if(typeof DePayButtons != "undefined") { DePayButtons.init({document: document}); }</script>';
+    $html = '<div class="DePayButton" label="'.esc_html($buttonLabel).'" widget="Donation" configuration=\'{ "style": { "colors": { "primary": "'.esc_html($widgetColorPrimary).'", "buttonText": "'.esc_html($widgetColorButtons).'", "icons": "'.esc_html($widgetColorIcons).'", "text": "'.esc_html($widgetColorText).'" }, "css": "'.esc_html($widgetCSS).'" }, "accept": '.str_replace('&quot;', '"', esc_html($accept)).', "fee": { "amount": "1.5%", "receiver": "0x7b94266CA5cC36005b3043e1ffE5EBd624494731" } }\' css="'.esc_html($buttonCSS).'"></div><script>if(typeof DePayButtons != "undefined") { DePayButtons.init({document: document}); }</script>';
 
     return sprintf(
       '<div %1$s>%2$s</div>',

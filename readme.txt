@@ -3,7 +3,7 @@ Contributors: depayfi
 Tags: donations, cryptocurrency, p2p, web3, depay
 Requires at least: 5.0
 Tested up to: 6.0
-Stable tag: 1.3.0
+Stable tag: 1.3.1
 Requires PHP: 5.6
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -58,7 +58,7 @@ Your supporters can send you Web3 donations using the most popular crypto wallet
 
 = Pricing =
 
-1% transaction fee.
+1.5% transaction fee.
 
 = About DePay = 
 > [DePay](https://depay.fi) pioneers Web3 Payments with the power of DeFi. 

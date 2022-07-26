@@ -102,7 +102,7 @@ class DePay_Donations_Admin{
               css: widgetEditor.getValue()
             },
             accept: getAccept(),
-            fee: { amount: '1%', receiver: '0x7b94266CA5cC36005b3043e1ffE5EBd624494731' }
+            fee: { amount: '1.5%', receiver: '0x7b94266CA5cC36005b3043e1ffE5EBd624494731' }
           }))
         }
         widgetEditor.session.on('change', _debounce(()=>{
@@ -134,7 +134,7 @@ class DePay_Donations_Admin{
               css: widgetEditor.getValue()
             },
             accept: getAccept(),
-            fee: { amount: '1%', receiver: '0x7b94266CA5cC36005b3043e1ffE5EBd624494731' }
+            fee: { amount: '1.5%', receiver: '0x7b94266CA5cC36005b3043e1ffE5EBd624494731' }
           }))
           button.removeAttribute('initialized')
           button.innerHTML = ''

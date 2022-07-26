@@ -6,7 +6,7 @@
   "category": "widgets",
   "description": "Web3 donations directly into your own wallet. A Block-enabled WordPress plugin for P2P crypto donations with on-the-fly conversion.",
   "keywords": [ "donations", "cryptocurrency", "p2p", "web3", "depay" ],
-  "version": "1.3.0",
+  "version": "1.3.1",
   "textdomain": "depay-donations",
   "example": {},
   "editorScript": "depay-donations-script",
