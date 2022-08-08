@@ -6,19 +6,19 @@
  * admin area. This file also includes all of the dependencies used by the plugin
  * and defines a function that starts the plugin.
  * 
- * @link          https://depay.fi
+ * @link          https://depay.com
  * @since         1.0.0
  * @package       DEPAYDONATIONS
  * 
  * @wordpress-plugin
  * Plugin Name:   DePay Donations
- * Plugin URI:    https://depay.fi/plugins/wordpress
+ * Plugin URI:    https://depay.com/plugins/wordpress
  * Description:   Web3 donations directly into your own wallet. Block-enabled Wordpress plugin for P2P cryptocurrency donations on multiple blockchains, with on-the-fly token conversion.
- * Version:       1.3.1
+ * Version:       1.3.2
  * License:       GPL-2.0+
  * License URI:   http://www.gnu.org/licenses/gpl-2.0.txt
  * Author:        DePay
- * Author URI:    https://depay.fi
+ * Author URI:    https://depay.com
  * Text Domain:   depay-donations
  * Domain Path:   /languages
  */

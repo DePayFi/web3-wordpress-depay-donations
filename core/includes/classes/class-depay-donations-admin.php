@@ -32,7 +32,7 @@ class DePay_Donations_Admin{
     <div class="wrap">
       <h1 class="wp-heading-inline">DePay Donations</h1>
       <p>
-        To view received donation payments, please open the <a href="https://app.depay.fi/payments" target="_blank">DePay App</a>.
+        To view received donation payments, please open the <a href="https://app.depay.com/payments" target="_blank">DePay App</a>.
       </p>
       <form action='options.php' method='post'>
 

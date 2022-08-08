@@ -3,7 +3,7 @@ Contributors: depayfi
 Tags: donations, cryptocurrency, p2p, web3, depay
 Requires at least: 5.0
 Tested up to: 6.0
-Stable tag: 1.3.1
+Stable tag: 1.3.2
 Requires PHP: 5.6
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -61,19 +61,19 @@ Your supporters can send you Web3 donations using the most popular crypto wallet
 1.5% transaction fee.
 
 = About DePay = 
-> [DePay](https://depay.fi) pioneers Web3 Payments with the power of DeFi. 
+> [DePay](https://depay.com) pioneers Web3 Payments with the power of DeFi. 
 > Driving mass adoption of blockchain-based payments, DePay merges the core ideas of decentralization and interoperability with state-of-the-art Web3 technologies.
 > The first truly decentralized multichain payment protocol built on DeFi. ETHOnline finalist, made in Switzerland (Crypto Valley).
 
-🤝 Do you want to integrate the DePay payment protocol into your own WordPress plugin or project? [We are happy to give you support](https://depay.fi/documentation#support).
+🤝 Do you want to integrate the DePay payment protocol into your own WordPress plugin or project? [We are happy to give you support](https://depay.com/documentation#support).
 
 == Installation ==
 
 [youtube https://www.youtube.com/watch?v=bc1sPOnlGyk]
 
--> [How to Accept Web3 Cryptocurrency Donations on Wordpress](https://depay.fi/how-to/accept-web3-cryptocurrency-donations-on-wordpress-3kmut5La6fMFiv7lHCfaeF)
+-> [How to Accept Web3 Cryptocurrency Donations on Wordpress](https://depay.com/how-to/accept-web3-cryptocurrency-donations-on-wordpress-3kmut5La6fMFiv7lHCfaeF)
 
-❤️ The DePay community is [here for you](https://depay.fi/documentation#support) in case you need additional support.
+❤️ The DePay community is [here for you](https://depay.com/documentation#support) in case you need additional support.
 
 == Frequently Asked Questions ==
 
@@ -82,7 +82,7 @@ Another term we like to use is "wallet-to-wallet".
 When someone sends you a crypto donation through your WordPress-based website via DePay, it goes directly from your supporter's wallet to your own wallet (this is referred to by the term "peer-to-peer" or "P2P"). There are no intermediaries in between, but smart contracts. These ensure that the payer can pay with any token on supported blockchains, whereupon the tokens are converted into the ones you want to receive.
 
 = What are "Web3 payments"? =
-Building on the idea that "Web3" is the next generation of a blockchain-based and therefore decentralized Internet, "Web3 payments" are a new type of P2P payments. Besides being decentralized and peer-to-peer, they are also characterized by being "permissionless" and not requiring you to trust ("trustless") in centralized entities such as intermediaries. Furthermore, Web3 payments are censorship-resistant. "Open source" code can often be an indicator of Web3 technologies. Read more on our [page about Web3 Payments](https://depay.fi/web3-payments).
+Building on the idea that "Web3" is the next generation of a blockchain-based and therefore decentralized Internet, "Web3 payments" are a new type of P2P payments. Besides being decentralized and peer-to-peer, they are also characterized by being "permissionless" and not requiring you to trust ("trustless") in centralized entities such as intermediaries. Furthermore, Web3 payments are censorship-resistant. "Open source" code can often be an indicator of Web3 technologies. Read more on our [page about Web3 Payments](https://depay.com/web3-payments).
 
 = How does "on-the-fly" conversion work? =
 * You configure which tokens you want to receive (e.g. USDT, BUSD) per blockchain

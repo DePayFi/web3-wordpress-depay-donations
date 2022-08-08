@@ -25,6 +25,6 @@ https://github.com/depayfi/web3-wordpress
 In order to release the plugins simply push a git tag:
 
 ```
-git tag v1.3.1
-git push origin v1.3.1
+git tag v1.3.2
+git push origin v1.3.2
 ```
