@@ -101,6 +101,9 @@ Building on the idea that "Web3" is the next generation of a blockchain-based an
 
 == Changelog ==
 
+= 1.3.2 =
+* depay.com
+
 = 1.3.0 =
 * upgrade widgets+buttons to 7.13
 
