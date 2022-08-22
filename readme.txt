@@ -3,7 +3,7 @@ Contributors: depayfi
 Tags: donations, cryptocurrency, p2p, web3, depay
 Requires at least: 5.0
 Tested up to: 6.0
-Stable tag: 1.3.2
+Stable tag: 1.3.3
 Requires PHP: 5.6
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -53,7 +53,7 @@ Your supporters can send you Web3 donations using the most popular crypto wallet
 = Supported blockchains =
 * Ethereum
 * BNB Chain (previously "Binance Smart Chain")
-* Polygon (soon)
+* Polygon
 * Solana (soon)
 
 = Pricing =
@@ -82,7 +82,7 @@ Another term we like to use is "wallet-to-wallet".
 When someone sends you a crypto donation through your WordPress-based website via DePay, it goes directly from your supporter's wallet to your own wallet (this is referred to by the term "peer-to-peer" or "P2P"). There are no intermediaries in between, but smart contracts. These ensure that the payer can pay with any token on supported blockchains, whereupon the tokens are converted into the ones you want to receive.
 
 = What are "Web3 payments"? =
-Building on the idea that "Web3" is the next generation of a blockchain-based and therefore decentralized Internet, "Web3 payments" are a new type of P2P payments. Besides being decentralized and peer-to-peer, they are also characterized by being "permissionless" and not requiring you to trust ("trustless") in centralized entities such as intermediaries. Furthermore, Web3 payments are censorship-resistant. "Open source" code can often be an indicator of Web3 technologies. Read more on our [page about Web3 Payments](https://depay.com/web3-payments).
+Building on the idea that "Web3" is the next generation of a blockchain-based and therefore decentralized Internet, "Web3 payments" are a new type of P2P payments. Besides being decentralized and peer-to-peer, they are also characterized by being "permissionless" and not requiring you to trust ("trustless") in centralized entities such as intermediaries. Furthermore, Web3 payments are censorship-resistant. "Open source" code can often be an indicator of Web3 technologies. Read more: [What are Web3 Payments?](https://depay.com/web3-payments).
 
 = How does "on-the-fly" conversion work? =
 * You configure which tokens you want to receive (e.g. USDT, BUSD) per blockchain
@@ -100,6 +100,9 @@ Building on the idea that "Web3" is the next generation of a blockchain-based an
 7. Customize the theme appearance with a live preview.
 
 == Changelog ==
+
+= 1.3.3 =
+* fix readme
 
 = 1.3.2 =
 * depay.com
