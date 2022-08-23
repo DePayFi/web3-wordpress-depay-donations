@@ -21,11 +21,11 @@ A Block-enabled WordPress plugin for P2P cryptocurrency donations on multiple bl
 > 📌 Check out the [live demo](https://web3wordpress.xyz "Wordpress Plugin for Crypto P2P donations (live demo) by DePay").
 
 * **Wallet-to-wallet**: Middleman-free P2P payments.
-* **Multichain**: Your supporters can send crypto donations on different blockchains.
+* **Multichain**: Your supporters can send crypto donations on various blockchains.
 * **On-the-fly conversion**: 100% decentralized token conversion via decentralized liquidity pools such as Uniswap or PancakeSwap. 
 * **Configure incoming tokens**: Receive the tokens you want while letting your supporters pay with tokens they hold. 
 * **Open-source**: You can find our [Web3 Donation Plugin on GitHub](https://github.com/DePayFi/web3-wordpress).
-* **Buttons & Links**: The widget can be triggered in different ways.
+* **Buttons & Links**: The widget can be triggered in various ways.
 * **Block-enabled**: You can add DePay Donations as a WordPress Block.
 * **Custom CSS**: Customize the look of your donation button with your own CSS in the WordPress plugin dashboard.
 
@@ -34,7 +34,7 @@ Your supporters can send you Web3 donations using the most popular crypto wallet
 
 * Metamask
 * Coinbase Wallet
-* 100+ different wallets via [WalletConnect](https://walletconnect.com), **for example**:
+* 100+ additional wallets via WalletConnect, **for example**:
   * Trust Wallet
   * DeFi Wallet by crypto.com
   * 1inch Wallet
