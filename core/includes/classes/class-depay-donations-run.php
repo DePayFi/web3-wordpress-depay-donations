@@ -31,6 +31,14 @@ class DePay_Donations_Run{
     wp_enqueue_script( 'depay-donations-react-shadow-dom' );
 
     wp_register_script(
+      'depay-donations-blockchains',
+      DEPAYDONATIONS_PLUGIN_URL . 'core/includes/assets/js/blockchains.js',
+      ['wp-element'],
+      DEPAYDONATIONS_PLUGIN_URL . 'core/includes/assets/js/blockchains.js'
+    );
+    wp_enqueue_script( 'depay-donations-blockchains' );
+
+    wp_register_script(
       'depay-donations-buttons',
       DEPAYDONATIONS_PLUGIN_URL . 'core/includes/assets/js/buttons.js',
       ['wp-element'],
