@@ -87,28 +87,9 @@ class DePay_Donations_Admin{
         widgetEditor.session.setOptions({ tabSize: 2, useSoftTabs: true })
         widgetEditor.session.setMode("ace/mode/css")
         let unmount
-        window.initDonationWidget = async()=> {
-          if(unmount) { unmount(); unmount = undefined }
-          ({ unmount } = await DePayWidgets.Donation({
-            container: document.getElementById('depayDonationWidgetDemo'),
-            closable: false,
-            style: {
-              colors: {
-                primary: document.getElementById('depayDonationWidgetStyleColorPrimary').value,
-                buttonText: document.getElementById('depayDonationWidgetStyleColorButtonText').value,
-                icons: document.getElementById('depayDonationWidgetStyleColorIcons').value,
-                text: document.getElementById('depayDonationWidgetStyleColorText').value
-              },
-              css: widgetEditor.getValue()
-            },
-            accept: getAccept(),
-            fee: { amount: '1.5%', receiver: '0x7b94266CA5cC36005b3043e1ffE5EBd624494731' }
-          }))
-        }
         widgetEditor.session.on('change', _debounce(()=>{
           let css = widgetEditor.getValue()
           document.getElementById('DePay_donations_widget_css').value = css
-          initDonationWidget()
         }, 800));
 
         var buttonEditor = ace.edit("buttonEditor")
@@ -143,11 +124,9 @@ class DePay_Donations_Admin{
         document.getElementById('DePay_donations_button_label').addEventListener('keydown', _debounce(initDonationButton, 300))
         document.getElementById('DePay_donations_receiving_wallet_address').addEventListener('keydown', _debounce(()=>{
           initDonationButton()
-          initDonationWidget()
         }, 300))
 
         initDonationButton()
-        initDonationWidget()
       </script>
     <?php
     }
@@ -407,10 +386,10 @@ class DePay_Donations_Admin{
     ?>
       <div style="margin-bottom: 1.6rem">
         <p class="description" style="margin-bottom: 0.8rem"><strong>Style</strong></p>
-        <div style="margin-bottom: 0.8rem"><label style="display: flex; align-items: center;"><input name='DePay_donations_widget_color_primary' id="depayDonationWidgetStyleColorPrimary" onchange="initDonationWidget()" style="margin-right: 0.6rem" type="color" value="<?php echo esc_html($widgetColorPrimary) ?>"/>Primary</label></div>
-        <div style="margin-bottom: 0.8rem"><label style="display: flex; align-items: center;"><input name='DePay_donations_widget_color_buttons' id="depayDonationWidgetStyleColorButtonText" onchange="initDonationWidget()" style="margin-right: 0.6rem" type="color" value="<?php echo esc_html($widgetColorButtons) ?>"/>Button Text</label></div>
-        <div style="margin-bottom: 0.8rem"><label style="display: flex; align-items: center;"><input name='DePay_donations_widget_color_icons' id="depayDonationWidgetStyleColorIcons" onchange="initDonationWidget()" style="margin-right: 0.6rem" type="color" value="<?php echo esc_html($widgetColorIcons) ?>"/>Icon Color</label></div>
-        <div style="margin-bottom: 0.8rem"><label style="display: flex; align-items: center;"><input name='DePay_donations_widget_color_text' id="depayDonationWidgetStyleColorText" onchange="initDonationWidget()" style="margin-right: 0.6rem" type="color" value="<?php echo esc_html($widgetColorText) ?>"/>Text</label></div>
+        <div style="margin-bottom: 0.8rem"><label style="display: flex; align-items: center;"><input name='DePay_donations_widget_color_primary' id="depayDonationWidgetStyleColorPrimary" style="margin-right: 0.6rem" type="color" value="<?php echo esc_html($widgetColorPrimary) ?>"/>Primary</label></div>
+        <div style="margin-bottom: 0.8rem"><label style="display: flex; align-items: center;"><input name='DePay_donations_widget_color_buttons' id="depayDonationWidgetStyleColorButtonText" style="margin-right: 0.6rem" type="color" value="<?php echo esc_html($widgetColorButtons) ?>"/>Button Text</label></div>
+        <div style="margin-bottom: 0.8rem"><label style="display: flex; align-items: center;"><input name='DePay_donations_widget_color_icons' id="depayDonationWidgetStyleColorIcons" style="margin-right: 0.6rem" type="color" value="<?php echo esc_html($widgetColorIcons) ?>"/>Icon Color</label></div>
+        <div style="margin-bottom: 0.8rem"><label style="display: flex; align-items: center;"><input name='DePay_donations_widget_color_text' id="depayDonationWidgetStyleColorText" style="margin-right: 0.6rem" type="color" value="<?php echo esc_html($widgetColorText) ?>"/>Text</label></div>
       </div>
       <div>
         <p class="description"><strong>CSS</strong></p>
@@ -418,8 +397,6 @@ class DePay_Donations_Admin{
         <div id="widgetEditor" class="editor" style="margin-top: 0.8rem"><?php echo esc_html($widgetCSS) ?></div>
         <input type='hidden' id='DePay_donations_widget_css' name='DePay_donations_widget_css' value='<?php echo esc_html($widgetCSS); ?>'/>
       </div>
-      <p class="description" style="margin-bottom: 0.8rem; padding-top: 0.8rem;"><strong>Demo</strong></p>
-      <div id="depayDonationWidgetDemo"></div>
       
       <div style="padding-top: 0.8rem;">
         <p class="description"><strong>Usage</strong></p>
