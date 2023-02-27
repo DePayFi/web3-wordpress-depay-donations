@@ -29,7 +29,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 define( 'DEPAYDONATIONS_NAME',      'DePay Donations' );
 
 // Plugin version
-define( 'DEPAYDONATIONS_VERSION',   '1.0.0' );
+define( 'DEPAYDONATIONS_VERSION',   '1.5.0' );
 
 // Plugin Root File
 define( 'DEPAYDONATIONS_PLUGIN_FILE', __FILE__ );
