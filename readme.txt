@@ -24,7 +24,7 @@ A Block-enabled WordPress plugin for P2P cryptocurrency donations on multiple bl
 * **Multichain**: Your supporters can send crypto donations on various blockchains.
 * **On-the-fly conversion**: 100% decentralized token conversion via decentralized liquidity pools such as Uniswap or PancakeSwap. 
 * **Configure incoming tokens**: Receive the tokens you want while letting your supporters pay with tokens they hold. 
-* **Open-source**: You can find our [Web3 Donation Plugin on GitHub](https://github.com/DePayFi/web3-wordpress).
+* **Open-source**: You can find our [Web3 Donation Plugin on GitHub](https://github.com/DePayFi/web3-wordpress-depay-donations).
 * **Buttons & Links**: The widget can be triggered in various ways.
 * **Block-enabled**: You can add DePay Donations as a WordPress Block.
 * **Custom CSS**: Customize the look of your donation button with your own CSS in the WordPress plugin dashboard.
