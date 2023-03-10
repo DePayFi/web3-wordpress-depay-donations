@@ -3,7 +3,7 @@ Contributors: depayfi
 Tags: donations, cryptocurrency, p2p, web3, depay
 Requires at least: 5.0
 Tested up to: 6.1
-Stable tag: 1.5.4
+Stable tag: 1.5.5
 Requires PHP: 5.6
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -100,6 +100,9 @@ Building on the idea that "Web3" is the next generation of a blockchain-based an
 7. Customize the theme appearance with a live preview.
 
 == Changelog ==
+
+= 1.5.5 =
+* fixes wallet detection & enables generic Ethereum Wallet in "Connect a wallet"
 
 = 1.5.4 =
 * fixes edge-cases with 'Connect a wallet'
