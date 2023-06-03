@@ -3,7 +3,7 @@ Contributors: depayfi
 Tags: donations, cryptocurrency, p2p, web3, depay
 Requires at least: 5.0
 Tested up to: 6.1
-Stable tag: 1.5.9
+Stable tag: 1.6.0
 Requires PHP: 5.6
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -30,35 +30,15 @@ A Block-enabled WordPress plugin for P2P cryptocurrency donations on multiple bl
 * **Custom CSS**: Customize the look of your donation button with your own CSS in the WordPress plugin dashboard.
 
 = Supported wallets =
-Your supporters can send you Web3 donations using the most popular crypto wallets:
 
-* Metamask
-* Coinbase Wallet
-* 100+ additional wallets via WalletConnect, **for example**:
-  * Trust Wallet
-  * DeFi Wallet by crypto.com
-  * 1inch Wallet
-  * imToken Wallet
-  * TokenPocket
-  * Pillar
-  * Math Wallet
-  * Ledger Live
-  * Argent Wallet
-  * AlphaWallet
-  * Unstoppable Wallet
-  * Atomic Wallet
-  * Rainbow 
-  * (...)
+DePay supports [most crypto wallets](https://depay.com/wallets).
 
 = Supported blockchains =
 * Ethereum
-* BNB Chain (previously "Binance Smart Chain")
+* BNB Smart Chain
 * Polygon
-* Solana (soon)
+* Solana
 
-= Pricing =
-
-1.5% transaction fee.
 
 = About DePay = 
 > [DePay](https://depay.com) pioneers Web3 Payments with the power of DeFi. 
@@ -74,6 +54,10 @@ Your supporters can send you Web3 donations using the most popular crypto wallet
 -> [How to Accept Web3 Cryptocurrency Donations on Wordpress](https://depay.com/how-to/accept-web3-cryptocurrency-donations-on-wordpress-3kmut5La6fMFiv7lHCfaeF)
 
 ❤️ The DePay community is [here for you](https://depay.com/documentation#support) in case you need additional support.
+
+= Pricing =
+
+1.5% transaction fee.
 
 == Frequently Asked Questions ==
 
@@ -100,6 +84,9 @@ Building on the idea that "Web3" is the next generation of a blockchain-based an
 7. Customize the theme appearance with a live preview.
 
 == Changelog ==
+
+= 1.6.0 =
+* adds Solana support and allows to edit button and widget through admin
 
 = 1.5.9 =
 * fixes some token amount display issues

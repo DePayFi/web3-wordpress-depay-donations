@@ -61,6 +61,7 @@
 
 			let configuration = {
 				accept,
+				title: 'Donation',
 				style: {
 					colors: {
 					  primary: DePay_donations_widget_color_primary,
@@ -74,7 +75,7 @@
 			
 			let element = React.createElement('div', { style: { pointerEvents: 'none' } }, React.createElement(DePayButtons.DePayButton, {
 	      label: DePay_donations_button_label,
-	      widget: 'Donation',
+	      widget: 'Payment',
 	      css: DePay_donations_button_css,
 	      configuration
 	    }))
