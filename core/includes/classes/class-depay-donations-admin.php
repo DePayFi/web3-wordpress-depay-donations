@@ -116,7 +116,7 @@ class DePay_Donations_Admin{
 
     register_setting(
       'DePay_donations',
-      'DePay_donations_widget_color_buttons',
+      'DePay_donations_widget_color_button_text',
       array(
         'type' => 'string',
         'show_in_rest' => true,

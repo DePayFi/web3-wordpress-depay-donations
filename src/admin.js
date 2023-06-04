@@ -34,7 +34,7 @@
         DePay_donations_button_label: label,
         DePay_donations_widget_color_primary: widgetPrimary,
         DePay_donations_widget_button_border_radius: widgetButtonRadius,
-        DePay_donations_widget_color_buttons: undefined,
+        DePay_donations_widget_color_button_text: widgetButtonText,
         DePay_donations_widget_color_icons: undefined,
         DePay_donations_widget_color_text: undefined,
         DePay_donations_widget_css: widgetCss
@@ -130,7 +130,7 @@
           setButtonRadius(response.DePay_donations_button_border_radius || "2")
           setWidgetPrimary(response.DePay_donations_widget_color_primary || "#32373c")
           setWidgetButtonRadius(response.DePay_donations_widget_button_border_radius || "2")
-          setWidgetButtonText(response.DePay_donations_button_text_color || "#FFFFFF")
+          setWidgetButtonText(response.DePay_donations_widget_color_button_text || "#FFFFFF")
           setWidgetIconColor()
           setWidgetText()
           setSettingsAreLoaded(true)
