@@ -99,7 +99,7 @@
     }
 
     const updateWidgetStyle = () =>{
-      setWidgetCss(`.ButtonPrimary {border-radius: ${widgetButtonRadius}px;}`)
+      setWidgetCss(`.ButtonPrimary { color: ${widgetButtonText || "#FFFFFF"}; border-radius: ${widgetButtonRadius}px;}`)
     }
 
     useEffect(()=>{
@@ -124,9 +124,9 @@
           }
           setLabel(response.DePay_donations_button_label || 'Support Us')
           setButtonCss(response.DePay_donations_button_css || "button {\n  border-radius: 2px;\n  color: #FFFFFF;\n  background: #32373c;\n}")
-          setWidgetCss(response.DePay_donations_widget_css || ".ButtonPrimary {border-radius: 2px;}")
+          setWidgetCss(response.DePay_donations_widget_css || ".ButtonPrimary { color: #FFFFFF; border-radius: 2px;}")
           setButtonBackground(response.DePay_donations_button_background_color || "#32373c")
-          setButtonText(response.DePay_donations_button_background_text || "#FFFFFF")
+          setButtonText(response.DePay_donations_button_text_color || "#FFFFFF")
           setButtonRadius(response.DePay_donations_button_border_radius || "2")
           setWidgetPrimary(response.DePay_donations_widget_color_primary || "#32373c")
           setWidgetButtonRadius(response.DePay_donations_widget_button_border_radius || "2")
