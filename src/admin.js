@@ -124,7 +124,7 @@
           }
           setLabel(response.DePay_donations_button_label || 'Support Us')
           setButtonCss(response.DePay_donations_button_css || "button {\n  border-radius: 2px;\n  color: #FFFFFF;\n  background: #32373c;\n}")
-          setWidgetCss(response.DePay_donation_widget_css || ".ButtonPrimary {border-radius: 2px;}")
+          setWidgetCss(response.DePay_donations_widget_css || ".ButtonPrimary {border-radius: 2px;}")
           setButtonBackground(response.DePay_donations_button_background_color || "#32373c")
           setButtonText(response.DePay_donations_button_background_text || "#FFFFFF")
           setButtonRadius(response.DePay_donations_button_border_radius || "2")

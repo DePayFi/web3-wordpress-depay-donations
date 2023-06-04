@@ -1,7 +1,7 @@
 {
   "name": "@depay/web3-wordpress-depay-donations",
   "moduleName": "WordpressDePayDonations",
-  "version": "1.6.3",
+  "version": "1.6.4",
   "description": "Web3 donations directly into your own wallet. A Block-enabled WordPress plugin for P2P cryptocurrency donations on multiple blockchains.",
   "main": "./dist/umd/index.js",
   "module": "./dist/esm/index.js",
