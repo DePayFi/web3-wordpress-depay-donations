@@ -21,7 +21,6 @@
     const [ buttonCss, setButtonCss ] = useState()
     const [ widgetCss, setWidgetCss ] = useState()
     const [ payments, setPayments ] = useState([])
-    const [ invalidReceivers, setInvalidReceivers ] = useState([])
 
     const saveSettings = ()=>{
       setIsSaving(true)
@@ -48,9 +47,9 @@
 
     const setReceivingWalletAddress = (receiver, index, blockchain)=>{
     
-      let newInvalidReceivers = [...invalidReceivers]
+      let newPayments = [...payments]
       if(!receiver || receiver.length === 0) {
-        newInvalidReceivers[index] = 'Please enter a receiver address!'
+        newPayments[index].error = 'Please enter a receiver address!'
       } else {
         try {
           if(blockchain === 'solana') {
@@ -58,14 +57,12 @@
           } else {
             receiver = ethers.ethers.utils.getAddress(receiver)
           }
-          newInvalidReceivers[index] = undefined
+          newPayments[index].error = undefined
         } catch {
-          newInvalidReceivers[index] = 'This address is invalid!'
+          newPayments[index].error = 'This address is invalid!'
         }
       }
-      setInvalidReceivers(newInvalidReceivers)
 
-      let newPayments = [...payments]
       newPayments[index].receiver = receiver
       setPayments(newPayments)
     }
@@ -78,9 +75,7 @@
     const addToken = async ()=>{
       let token = await DePayWidgets.Select({ what: 'token' })
       if((payments instanceof Array) && payments.find((selectedToken)=>(selectedToken.blockchain == token.blockchain && selectedToken.address == token.address))) { return }
-      let newInvalidReceivers = [...invalidReceivers]
-      newInvalidReceivers[payments.length] = 'Please enter a receiver address!'
-      setInvalidReceivers(newInvalidReceivers)
+      token.error = 'Please enter a receiver address!'
       if(payments instanceof Array) {
         setPayments(payments.concat([token]))
       } else {
@@ -139,8 +134,8 @@
     }, [])
 
     useEffect(()=>{
-      setIsDisabled( ! (payments && payments.length && payments.every((token)=>token.receiver && token.receiver.length > 0) && invalidReceivers.filter(Boolean).length === 0) )
-    }, [ payments, invalidReceivers ])
+      setIsDisabled( ! (payments && payments.length && payments.every((token)=>token.receiver && token.receiver.length > 0 && token.error === undefined)) )
+    }, [ payments ])
 
     useEffect(()=>{
       setSaved(false)
@@ -168,7 +163,7 @@
                 {
                   payments && payments.map((payment, index)=>{
                     return(
-                      <table key={ index } className="wp-list-table widefat fixed striped table-view-list page" style={{ maxWidth: "600px", marginBottom: "0.4rem"}}>
+                      <table key={ `${index}-${payment.blockchain}-${payment.symbol}` } className="wp-list-table widefat fixed striped table-view-list page" style={{ maxWidth: "600px", marginBottom: "0.4rem"}}>
                         <tr>
                           <td style={{ padding: "1rem 1rem 0.4rem 1rem", display: "flex" }}>
                             <img src={ payment.logo } style={{ background: "white", borderRadius: "99px", height: "3rem", width: "3rem" }}/>
@@ -197,9 +192,9 @@
                                       onChange={ (event)=>setReceivingWalletAddress(event.target.value, index, payment.blockchain) }
                                     />
                                   </div>
-                                  { invalidReceivers[index] &&
+                                  { payment.error &&
                                     <div className="notice inline notice-warning notice-alt" style={{ marginBottom: 0 }}>
-                                      {invalidReceivers[index]}
+                                      {payment.error}
                                     </div>
                                   }
                                 </label>
