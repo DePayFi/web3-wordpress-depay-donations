@@ -90,7 +90,11 @@ class DePay_Donations_Block {
       'depay-donations-widgets',
       DEPAYDONATIONS_PLUGIN_URL . 'core/includes/assets/js/widgets.bundle.js',
       array(),
-      DEPAYDONATIONS_PLUGIN_URL . 'core/includes/assets/js/widgets.bundle.js'
+      DEPAYDONATIONS_VERSION,
+      array(
+        'in_footer' => true,
+        'strategy' => 'defer'
+      )
     );
     wp_enqueue_script( 'depay-donations-widgets' );
 
@@ -98,7 +102,11 @@ class DePay_Donations_Block {
       'depay-donations-react-shadow-dom',
       DEPAYDONATIONS_PLUGIN_URL . 'core/includes/assets/js/react-shadow-dom.js',
       ['wp-element'],
-      DEPAYDONATIONS_PLUGIN_URL . 'core/includes/assets/js/react-shadow-dom.js'
+      DEPAYDONATIONS_VERSION,
+      array(
+        'in_footer' => true,
+        'strategy' => 'defer'
+      )
     );
     wp_enqueue_script( 'depay-donations-react-shadow-dom' );
 
@@ -106,7 +114,11 @@ class DePay_Donations_Block {
       'depay-donations-blockchains',
       DEPAYDONATIONS_PLUGIN_URL . 'core/includes/assets/js/blockchains.js',
       ['wp-element'],
-      DEPAYDONATIONS_PLUGIN_URL . 'core/includes/assets/js/blockchains.js'
+      DEPAYDONATIONS_VERSION,
+      array(
+        'in_footer' => true,
+        'strategy' => 'defer'
+      )
     );
     wp_enqueue_script( 'depay-donations-blockchains' );
 
@@ -114,7 +126,11 @@ class DePay_Donations_Block {
       'depay-donations-buttons',
       DEPAYDONATIONS_PLUGIN_URL . 'core/includes/assets/js/buttons.js',
       ['wp-element'],
-      DEPAYDONATIONS_PLUGIN_URL . 'core/includes/assets/js/buttons.js'
+      DEPAYDONATIONS_VERSION,
+      array(
+        'in_footer' => true,
+        'strategy' => 'defer'
+      )
     );
     wp_enqueue_script( 'depay-donations-buttons' );
 
@@ -122,8 +138,11 @@ class DePay_Donations_Block {
       'depay-donations-init-buttons',
       DEPAYDONATIONS_PLUGIN_URL . 'core/includes/assets/js/init-buttons.js',
       [],
-      DEPAYDONATIONS_PLUGIN_URL . 'core/includes/assets/js/init-buttons.js',
-      true
+      DEPAYDONATIONS_VERSION,
+      array(
+        'in_footer' => true,
+        'strategy' => 'defer'
+      )
     );
     wp_enqueue_script( 'depay-donations-init-buttons' );
 
