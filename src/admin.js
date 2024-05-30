@@ -284,13 +284,6 @@
                   <div style={{ marginBottom: "0.8rem" }}><label style={{ display: "flex", alignItems: "center" }}><input style={{ marginRight: "0.6rem" }} type="color" value={widgetButtonText} onChange={(event)=>{ setWidgetButtonText(event.target.value) }}/>Button Text</label></div>
                   <div style={{ marginBottom: "0.8rem" }}><label style={{ display: "flex", alignItems: "center" }}><input style={{ marginRight: "0.6rem" }} type="range" value={widgetButtonRadius} min="0" max="36" onChange={(event)=>{ setWidgetButtonRadius(event.target.value) }}/>Button Border</label></div>
                 </div>
-                <div style={{ paddingTop: "0.8rem" }}>
-                  <p className="description"><strong>Usage</strong></p>
-                </div>
-                <div style={{ marginBottom: "0.8rem" }}>
-                  <p className="description" style={{ marginBottom: "0.8rem" }}>Link any text to <strong>#depay-donation-widget</strong> and it will open your donation widget upon click.</p>
-                </div>
-                <img style={{ maxWidth: "600px" }} src="/wp-content/plugins/depay-donations/core/includes/assets/img/widget.gif"/>                
               </td>
             </tr>
             <tr>
