@@ -91,9 +91,12 @@ Building on the idea that "Web3" is the next generation of a blockchain-based an
 == Changelog ==
 
 = 2.3.2 =
-* linking the widget is not supported anymore, please use the button component
+* fixes Solana RPC failover issues
 
 = 2.3.1 =
+* linking the widget is not supported anymore, please use the button component
+
+= 2.3.2 =
 * fixes mobile wallet connectivity (WalletConnect)
 
 = 2.3.0 =
