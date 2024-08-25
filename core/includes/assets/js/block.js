@@ -39,7 +39,7 @@
 	    }
 	  },
 		icon,
-		keywords: [ "donations", "cryptocurrency", "p2p", "web3", "depay" ],
+		keywords: [ "donations", "cryptocurrency", "web3", "DePay", "USDC" ],
 		category: 'widgets',
 		example: {},
 		edit: function (props) {

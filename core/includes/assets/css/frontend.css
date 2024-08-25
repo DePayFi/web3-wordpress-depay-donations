@@ -1,5 +1,5 @@
-.wp-block-depay-donations-block {
-
+.wp-block-depay-donations-block, .wp-block-depay-donations-block * {
+  outline: none !important;
 }
 
 .wp-block-depay-donations-block.align_right {
