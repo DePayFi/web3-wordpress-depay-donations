@@ -1,8 +1,8 @@
 {
   "name": "@depay/web3-wordpress-depay-donations",
   "moduleName": "WordpressDePayDonations",
-  "version": "2.3.5",
-  "description": "Accept Web3 donations, supporting various cryptocurrency tokens and wallets, with the DePay Donation extension for Wordpress. MetaMask, Phantom, USDC, USDT, ETH, SOL, BSC, POL, xDAI...",
+  "version": "2.3.6",
+  "description": "Accept Web3 Donations. Supporting various cryptocurrency tokens and wallets. MetaMask, Phantom, USDC, USDT, ETH, SOL, BSC…",
   "main": "./dist/umd/index.js",
   "module": "./dist/esm/index.js",
   "files": [
