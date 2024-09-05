@@ -6,7 +6,7 @@
   "category": "widgets",
   "description": "Accept Web3 Donations. Supporting various cryptocurrency tokens and wallets. MetaMask, Phantom, USDC, USDT, ETH, SOL, BSC…",
   "keywords": [ "donations", "cryptocurrency", "web3", "DePay", "USDC" ],
-  "version": "2.3.6",
+  "version": "2.3.7",
   "textdomain": "depay-donations",
   "example": {},
   "editorScript": "depay-donations-script",
