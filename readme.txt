@@ -3,7 +3,7 @@ Contributors: depayfi
 Tags: donations, cryptocurrency, web3, DePay, USDC
 Requires at least: 5.0
 Tested up to: 6.6
-Stable tag: 2.3.7
+Stable tag: 2.3.8
 Requires PHP: 5.6
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -80,6 +80,9 @@ Start for free. Pay-as-you-go 1.5% per transaction.
 
 == Changelog ==
 
+= 2.3.8 =
+* fix loading payment options (rpc settings & rotation)
+
 = 2.3.7 =
 * fix prevents deadlock: widget loading payment options forever
 
@@ -98,7 +101,7 @@ Start for free. Pay-as-you-go 1.5% per transaction.
 = 2.3.1 =
 * linking the widget is not supported anymore, please use the button component
 
-= 2.3.7 =
+= 2.3.8 =
 * fixes mobile wallet connectivity (WalletConnect)
 
 = 2.3.0 =
