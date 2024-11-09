@@ -3,7 +3,7 @@ Contributors: depayfi
 Tags: donations, cryptocurrency, web3, DePay, USDC
 Requires at least: 5.0
 Tested up to: 6.6
-Stable tag: 2.4.0
+Stable tag: 2.4.1
 Requires PHP: 5.6
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -81,6 +81,9 @@ Start for free. Pay-as-you-go 1.5% per transaction.
 
 == Changelog ==
 
+= 2.4.1 =
+* fixes solflare handover on mobile and some solana rpcs
+
 = 2.4.0 =
 * adds World Chain support + various bug fixes
 
@@ -105,7 +108,7 @@ Start for free. Pay-as-you-go 1.5% per transaction.
 = 2.3.1 =
 * linking the widget is not supported anymore, please use the button component
 
-= 2.4.0 =
+= 2.4.1 =
 * fixes mobile wallet connectivity (WalletConnect)
 
 = 2.3.0 =
