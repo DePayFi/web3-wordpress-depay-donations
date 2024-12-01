@@ -13,8 +13,8 @@
  * @wordpress-plugin
  * Plugin Name:   DePay Donations
  * Plugin URI:    https://depay.com/plugins/wordpress
- * Description:   Accept Web3 Donations. Supporting various cryptocurrency tokens and wallets. MetaMask, Phantom, USDC, USDT, ETH, SOL, BSC…
- * Version:       2.4.1
+ * Description:   Deprecated! Please install DePay's new plugin: https://wordpress.org/plugins/depay-payments/
+ * Version:       2.4.2
  * License:       GPL-2.0+
  * License URI:   http://www.gnu.org/licenses/gpl-2.0.txt
  * Author:        DePay
@@ -29,7 +29,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 define( 'DEPAYDONATIONS_NAME',      'DePay Donations' );
 
 // Plugin version
-define( 'DEPAYDONATIONS_VERSION',   '2.4.1' );
+define( 'DEPAYDONATIONS_VERSION',   '2.4.2' );
 
 // Plugin Root File
 define( 'DEPAYDONATIONS_PLUGIN_FILE', __FILE__ );
